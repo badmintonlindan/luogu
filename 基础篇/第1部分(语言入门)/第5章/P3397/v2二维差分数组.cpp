@@ -21,9 +21,9 @@ int main()
         ++b[x2 + 1][y2 + 1];
     }
     // 再由b求出a
-    for (int i = 0; i <= n; ++i)
+    for (int i = 1; i <= n; ++i)
     {
-        for (int j = 0; j <= n; ++j)
+        for (int j = 1; j <= n; ++j)
         {
             a[i][j] = a[i - 1][j] + a[i][j - 1] - a[i - 1][j - 1] + b[i][j];
         }
